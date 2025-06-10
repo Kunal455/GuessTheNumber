@@ -28,6 +28,7 @@ const guess = (val) =>{
         let mess = document.querySelector(".message");
         mess.innerHTML = "Right! You Won"
         val.disabled=true;
+        btns.desabled=true;
         
         
      }
