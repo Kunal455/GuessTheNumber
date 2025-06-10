@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin:0px;
+            padding:0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+            position: fixed;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            background-color: rgb(18, 6, 74);
+            
+        
+           
+        }
+        .form{
+             border: 2px rgb(171, 172, 164) solid;
+             padding: 50px 80px 50px 80px;
+             position:fixed;
+             background-color: rgb(9, 57, 215);
+             border-radius: 20px;
+             border-width: 20px;
+             border-spacing: 0cqh;
+             width: 400px;
+             height:350px;
+             font-size: 20px;
+             
+
+             
+        }
+        .first{
+            color:white;
+            padding-left: 50px;
+
+            
+        }
+        button{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: 2px solid red;
+            border-radius: 20px;
+
+            
+        }
+        .hide{
+            display:none;
+        }
+        input{
+            border: 1px solid #ccc;  
+            border-radius: 4px;    
+            padding: 8px;            
+            outline: none; 
+            color: red;
+        }
+        button:hover{
+            color:yellow;
+        }
+
+        .message{
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+        <div class="first">
+        <h1>Hello!</h1>
+        <div class="random"><p>Guess the Number between 1 to 100</p></div>
+        <input type="text" class="data" placeholder="Enter the value">
+        <button class="btn">Guess</button>
+        <div>&nbsp;</div>
+        
+        <div class="message">Let's GO</div>
+
+        <div>Input Value: <span class="show">0</span></div>
+        <div class="attempt">Attempt: <span class="av">0</span>/10</div>
+
+        
+        <div>Real Value was: <span class="real"></span></div>
+        <div>&nbsp;</div>
+        <button class="new">NEW GAME</button>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="Random.js"></script>
+    
+</body>
+</html>
